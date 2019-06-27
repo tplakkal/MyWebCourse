@@ -1,0 +1,40 @@
+/* @import url('halloween.css');  */
+body {color: red; font-size: 100%; background: palegoldenrod}
+h2 {color: green}
+#header-h2 {color: black}
+#span-black {color: black}
+p {color: blue; font-size: 18px}
+p.two {color: black; font: bold 15px Arial sans-serif;}
+nav a:link{color: white; background-color: red; display: inline-block}
+nav a:hover{color: red; background-color: white}
+
+header{text-align: center; background-color: #1e5799;
+    @include filter-gradient(#1e5799, #7db9e8, vertical);
+    @include background-image(linear-gradient(top,  #1e5799 0%,#2989d8 39%,#207cca 39%,#2989d8 39%,#7db9e8 100%));}
+
+    nav ul li { 
+        list-style-type: none; 
+        display: inline-block;
+    }
+    nav ul li a {
+        text-decoration:none;
+        width: 9em; 
+        height: 1.25em;
+        padding: 5px;
+    }
+
+h1 { 
+    font-family: Courier; 
+}
+
+h2 { 
+    font-style: italic; 
+    font-size: 1.5em
+}
+
+footer { font-weight : bold}
+
+li { font-variant: small-caps}
+
+article h2 { background-image: linear-gradient(to bottom, rgba(246,230,180,1) 0%, rgba(237,144,23,1) 100%); }
+article { border-bottom: 1px solid black; padding:5px}
